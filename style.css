@@ -25,7 +25,8 @@ html {
 
 .container {
   max-width: 930px;
-  margin: 14rem auto;
+  margin: 8rem auto;
+  margin-bottom: 1.5rem;
   background-color: #fff;
   border-radius: 40px;
 }
@@ -108,4 +109,11 @@ ul {
   width: 100%;
   height: 3.5rem;
   margin-top: 1.5rem;
+}
+
+.attribution {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+  color: #fff;
 }
