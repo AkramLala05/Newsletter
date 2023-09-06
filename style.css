@@ -23,6 +23,16 @@ html {
   grid-template-columns: 1fr auto;
 }
 
+.grid--xs {
+  display: grid;
+  gap: calc(var(--space-sm) * 0.5);
+}
+
+.grid--md {
+  display: grid;
+  gap: var(--space-md);
+}
+
 .container {
   max-width: 930px;
   margin: 8rem auto;
@@ -128,4 +138,8 @@ ul {
   justify-content: center;
   margin-top: 0;
   color: #fff;
+}
+
+.hidden {
+  display: none;
 }

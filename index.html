@@ -29,7 +29,7 @@
   </head>
   <body>
     <div class="container">
-      <div class="content grid">
+      <div class="content grid" id="signup">
         <div class="content-info">
           <h1 class="content-heading">Stay updated!</h1>
           <p>Join 60,000+ product managers receiving monthly updates on:</p>
@@ -47,9 +47,10 @@
               more!
             </li>
           </ul>
-          <div class="sign">
+          <div class="sign" id="newsletter-form">
             <span class="email">Email address</span>
-            <input class="input" type="text" placeholder="email@company.com" />
+            <p class="error-message hidden">Valid email required</p>
+            <input class="input" type="text" id="email" placeholder="email@company.com" />
             <button class="btn">Subscribe to monthly newsletter</button>
           </div>
         </div>
@@ -57,15 +58,29 @@
           <img
             src="assets/images/illustration-sign-up-desktop.svg"
             alt="Image"
+            class="main-img"
           />
         </div>
       </div>
     </div>
-    <div class="attribution">
-     <p>Challenge by  
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"> Frontend Mentor </a> Coded by Akram Lala</p> 
-      
+    <div id="success" class="wrapper grid--md hidden">
+      <div class="content">
+       <img src="assets/images/icon-success.svg" alt="Success">
+        <h1>Thanks for subscribing!</h1>
+        <p>
+          a confirmation email has been sent to
+          <strong id="submitted-email"></strong>. Please open it and click the
+          button inside to confirm your subscription.
+        </p>
+        <button class="btn" id="dismiss">Dismiss Message</button>
+      </div>
     </div>
+    
+    <div class="attribution">
+      <p>Challenge by  
+       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"> Frontend Mentor </a> Coded by Akram Lala</p> 
+       
+     </div>
   </body>
 </html>
 
